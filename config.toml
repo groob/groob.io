@@ -1,6 +1,6 @@
 baseurl = "https://groob.io"
 languageCode = "en-us"
-title = "groob"
+title = "groob.io"
 canonifyUrls = "false"
 [params]
   description = "*person.Person"

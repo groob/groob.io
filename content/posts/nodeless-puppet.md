@@ -7,6 +7,8 @@ title = "Nodeless Puppet for macOS"
 
 When using puppet, it's recommended that you assign a unique [role](http://garylarizza.com/blog/2014/02/17/puppet-workflow-part-2/) to each [node](https://docs.puppet.com/puppet/latest/reference/lang_node_definitions.html). The role could be `webserver`, `admin_workstation`, `lab_mac` and so on. There are several ways to do this, the most simple one is by having a list of nodes in `manifests/site.pp`, and there are sevaral abstractions, like Foreman, or the Puppet Enterprise Dashboard, which allow you to assing roles to nodes through a web interface. If this sounds vaguely familiar to you, it should -- munki recommends the same strategy for manifests. We create a unique manifest for each hostname/serial number and use included manifests to add common applications.
 
+<!--more-->
+
 As both a munki or puppet user, I found the need to define the same data in two locations (unique munki manifest and puppet node definition) somewhat redundant, and potentially error prone. I find it preferable to have a [single source of truth](https://en.wikipedia.org/wiki/Single_source_of_truth). What if instead of defining this inventory data in two different software repositories, we let one tool define the data in the other. One way to achieve this, is to allow puppet to manage the manifests file in your munki repo. It can work, but I chose to do the opposite -- assigning roles in puppet, based on some metadata present on the Mac.
 
 I originally came accross this idea from [Jordan Sissel's](https://twitter.com/jordansissel) puppet-examples [repository](puppet-examples/nodeless-puppet) several years ago and have adopted it for my environment - mac workstations.

@@ -27,7 +27,9 @@ link = csv_page.links.last
 agent.get(link.attributes.first[1]).save savefile
 ```
 While doing this I realized that I might want to use this code in the future to automate other things, so I rewrote my code to be able to export any query quickly and in a repeatable way. What allowed me to do this were 2 features in ESWeb.
-<img src="vc_exportandsave.png"  />
+
+<img src="/vc_exportandsave.png"  />
+
 A query can be saved, which gives it a name and a numeric id. The ID allows me to recall the same query over and over by just adding that ID to a URL.
 ```
 esweb.asp?WCI=Results&Query=139187

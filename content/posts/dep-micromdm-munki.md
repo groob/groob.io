@@ -7,6 +7,7 @@ title = "Munkiing around with DEP"
 In my [last post](http://groob.io/posts/mdm-experiments/) from November I wrote an introduction to Apple's MDM Protocol spec. Apple has shown an innovative approach to enterprise deployment with it's DEP service and MDM protocol. Apple's solution allows for a more flexible deployment for administrators while giving users more control over their devices. Most enterprises already have robust solutions to manage devices in their organizations - especially laptops and desktops. We use Imagr, Munki and Puppet internally to manage our users' machines.  
 Unfortunately there are not many options for integrating existing solutions with Apple's new services. MDM vendors offer costly solutions and expect you to adopt their whole platform, no matter how poorly it fits in with your environment. To make matter worse, most MDM vendor's out there don't implement the parts of MDM spec for OS X, instead focusing mostly on iOS. 
 
+
 I've been looking for an MDM solution that would integrate with the [DEP service](http://www.apple.com/business/dep/) and allow an administrator to assign devices to a group/organizational unit. When that device would arrive in the hands of the end user, the MDM server would bootstrap Munki and Puppet. At that point, our existing services would configure the device as needed.
 Frustrated by the MDM vendor landscape out there, and inspired by the [work of others](http://enterprisemac.bruienne.com/2015/11/17/installing-os-x-pkgs-using-an-mdm-service/), I decided to write my own. 
 

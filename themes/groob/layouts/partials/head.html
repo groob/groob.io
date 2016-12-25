@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"{{with .Site.LanguageCode}} xml:lang="{{.}}" lang="{{.}}"{{end}}>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        {{ .Hugo.Generator }}
+
+        {{ if .IsHome }}
+        <title>{{ .Site.Title }}</title>
+        {{ else }}
+        <title>{{ .Title }} &middot; {{ .Site.Title }}</title>
+        {{ end }}
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="/css/groob.css">
+
+
+        <!-- RSS -->
+        <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+    </head>

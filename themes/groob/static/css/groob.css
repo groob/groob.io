@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: large;
+}
+
+.header {
+    padding: 1em;
+    background-color: #3f51b5;
+}
+
+.tab {
+    font-weight: bold;
+    font-size: 2em;
+    color: white;
+    text-decoration: none;
+}
+
+table {
+  margin-bottom: 1rem;
+  width: 100%;
+  border: 1px solid #e5e5e5;
+  border-collapse: collapse;
+}
+td,
+th {
+  padding: .25rem .5rem;
+  border: 1px solid #e5e5e5;
+}
+tbody tr:nth-child(odd) td,
+tbody tr:nth-child(odd) th {
+  background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 55rem;
+    margin-left:auto;
+    margin-right:auto;
+}
+.post {
+    display: block;
+    margin-bottom: 25px;
+}
+
+.post-title a { text-decoration: none;}
+.post-title a:hover { text-decoration: underline;}
+.post-title {
+    margin-bottom: 5px;
+}
+
+.post-date { 
+    color: gray;
+    font-style: italic;
+    margin-bottom: 1px;
+    display: block;
+}
+
+.reading-time {
+    color: gray;
+    font-style: italic;
+    margin-bottom: 5px;
+    display: block;
+}
+
+blockquote {
+    padding: .5rem 1rem;
+    margin: .8rem 0;
+    color: #7a7a7a;
+    border-left: .25rem solid #e5e5e5;
+}
+pre {
+    background: #EFEFEF;
+    line-height: 1.4em;
+    font-family: Go, Menlo, monospace;
+    padding: 10px;
+    border-radius: 7px;
+}
