@@ -1,0 +1,7 @@
+baseurl = "https://groob.io"
+languageCode = "en-us"
+title = "groob"
+canonifyUrls = "false"
+[params]
+  description = "*person.Person"
+  author = "Victor Vrantchan"
