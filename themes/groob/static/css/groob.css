@@ -75,3 +75,13 @@ pre {
     padding: 10px;
     border-radius: 7px;
 }
+
+
+img {
+    width: 90%;
+}
+
+#TableOfContents li {
+    list-style: none;
+    margin-bottom: 1px;
+}
