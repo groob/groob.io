@@ -4,7 +4,7 @@
     <div class="content container">
         <div class="posts">
 
-            {{ range .Data.Pages }}
+            {{ range where .Data.Pages ".Params.standalone" "!=" true }}
             <div class="post">
                 <h1 class="post-title">
                     <a href="{{ .Permalink }}">
