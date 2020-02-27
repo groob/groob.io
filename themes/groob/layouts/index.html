@@ -3,8 +3,7 @@
     {{ partial "header.html" . }}
     <div class="content container">
         <div class="posts">
-
-            {{ range where .Data.Pages ".Params.standalone" "!=" true }}
+            {{ range where .Site.RegularPages ".Params.standalone" "!=" true }}
             <div class="post">
                 <h1 class="post-title">
                     <a href="{{ .Permalink }}">
